@@ -21,7 +21,7 @@ module.exports = {
 					type: 'docsVersion',
 					position: 'left',
 					// to: "/path // by default, link to active/latest version
-					label: '0.1.1', // by default, show active/latest version label
+					label: '0.1.2', // by default, show active/latest version label
 				},
 				{
 					to: 'docs/',
