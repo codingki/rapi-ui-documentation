@@ -20,9 +20,8 @@ You can simply put your title or your logo on `middleContent`
 import { Layout, TopNav } from 'react-native-rapi-ui';
 
 <Layout>
-    <TopNav middleContent="Home">
-</Layout>
-
+	<TopNav middleContent="Home" />
+</Layout>;
 ```
 
 ### Left or Right Content

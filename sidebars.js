@@ -13,6 +13,7 @@ module.exports = {
 			'text',
 			'buttons',
 			'text-input',
+			'picker',
 			'checkbox',
 			'radio-button',
 			'avatar',

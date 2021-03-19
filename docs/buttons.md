@@ -28,7 +28,7 @@ If the parent component of the button have `flexDirection:'column'` the button w
 ```jsx
 import { Button } from 'react-native-rapi-ui';
 
-<Button text="Tap me" onPress={()=> console.log('Button tapped')}>
+<Button text="Tap me" onPress={() => console.log('Button tapped')} />;
 ```
 
 ### Button Color Status

@@ -38,7 +38,7 @@ export default Forms;
 |       props        | required |                              value                               | Default Value |
 | :----------------: | :------: | :--------------------------------------------------------------: | ------------- |
 |     **value**      |   Yes    |                            `boolean`                             | `false`       |
-| **onValueChange**  |   Yes    |                  `(newValue: boolean) => void`                   |               |
+| **onValueChange**  |   Yes    |                  (newValue: `boolean`) => void                   |               |
 |      **size**      |    No    |                             `number`                             | 24            |
 |  **checkedColor**  |    No    |                             `string`                             | #3366FF       |
 | **unCheckedColor** |    No    |                             `string`                             | #d8d8d8       |
