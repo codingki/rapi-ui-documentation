@@ -7,7 +7,7 @@ sidebar_label: Buttons
 Buttons allow users to take actions, and make choices, with a single tap.
 Button is basicly a Touchable component I customized
 
-![buttons](/assets/buttons.png)
+![buttons](./assets/buttons.png)
 
 `<Button/>` have three behaviour :
 
@@ -21,19 +21,19 @@ Button is basicly a Touchable component I customized
 
 The default behaviour of `Button` is `TouchableOpacity`
 
-![buttonSimple](/assets/buttonSimple.png)
+![buttonSimple](./assets/buttonSimple.png)
 
 If the parent component of the button have `flexDirection:'column'` the button width will have follow the parent component
 
 ```jsx
 import { Button } from 'react-native-rapi-ui';
 
-<Button text="Tap me" onPress={() => console.log('Button tapped')} />;
+<Button text="Tap me" onPress={()=> console.log('Button tapped')}>
 ```
 
 ### Button Color Status
 
-![buttonStatus](/assets/buttonStatus.png)
+![buttonStatus](./assets/buttonStatus.png)
 
 ```jsx
 import { Button } from 'react-native-rapi-ui';
@@ -47,7 +47,7 @@ import { Button } from 'react-native-rapi-ui';
 
 ### Outline Button
 
-![outlineButton](/assets/outlineButton.png)
+![outlineButton](./assets/outlineButton.png)
 
 ```jsx
 import { Button } from 'react-native-rapi-ui';
@@ -61,7 +61,7 @@ import { Button } from 'react-native-rapi-ui';
 
 ### Button Size
 
-![buttonSize](/assets/buttonSize.png)
+![buttonSize](./assets/buttonSize.png)
 
 ```jsx
 import { Button } from 'react-native-rapi-ui';
@@ -75,7 +75,7 @@ import { Button } from 'react-native-rapi-ui';
 ### With Left or Right Content
 
 You can fill the left or right side of the text with components. ex:`Icons` or `Image`
-![buttonContent](/assets/buttonContent.png)
+![buttonContent](./assets/buttonContent.png)
 
 ```jsx
 import { Button } from 'react-native-rapi-ui';
