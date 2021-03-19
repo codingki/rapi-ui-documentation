@@ -30,7 +30,7 @@ module.exports = {
 					position: 'right',
 				},
 				{
-					href: 'https://github.com/facebook/docusaurus',
+					href: 'https://github.com/codingki/react-native-rapi-ui',
 					label: 'GitHub',
 					position: 'right',
 				},
