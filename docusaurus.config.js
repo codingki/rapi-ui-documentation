@@ -1,12 +1,12 @@
 module.exports = {
 	title: 'Rapi UI',
-	tagline: 'React native components library',
-	url: 'https://your-docusaurus-test-site.com',
+	tagline: 'Beautiful components for your React Native apps',
+	url: 'https://rapi-ui.kikiding.space',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
-	organizationName: 'facebook', // Usually your GitHub org/user name.
+	organizationName: 'codingki', // Usually your GitHub org/user name.
 	projectName: 'react-native-rapi-ui', // Usually your repo name.
 	themeConfig: {
 		navbar: {
