@@ -45,9 +45,6 @@ module.exports = {
 			style: 'dark',
 			copyright: `Built with love by @kikiding`,
 		},
-		gtag: {
-			trackingID: 'G-WTR959SQWW',
-		},
 	},
 	presets: [
 		[
