@@ -45,7 +45,7 @@ module.exports = {
 			style: 'dark',
 			copyright: `Built with love by @kikiding`,
 		},
-		googleAnalytics: {
+		gtag: {
 			trackingID: 'G-WTR959SQWW',
 		},
 	},
