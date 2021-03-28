@@ -43,7 +43,7 @@ module.exports = {
 		},
 		footer: {
 			style: 'dark',
-			copyright: `Built with love by @kikiding`,
+			copyright: `Built with ❤ by @kikiding`,
 		},
 	},
 	presets: [
