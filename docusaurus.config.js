@@ -30,6 +30,11 @@ module.exports = {
 					position: 'right',
 				},
 				{
+					href: 'https://twitter.com/kikiding',
+					label: 'Twitter',
+					position: 'right',
+				},
+				{
 					href: 'https://github.com/codingki/react-native-rapi-ui',
 					label: 'GitHub',
 					position: 'right',
@@ -38,8 +43,10 @@ module.exports = {
 		},
 		footer: {
 			style: 'dark',
-
 			copyright: `Built with love by @kikiding`,
+		},
+		googleAnalytics: {
+			trackingID: 'G-WTR959SQWW',
 		},
 	},
 	presets: [

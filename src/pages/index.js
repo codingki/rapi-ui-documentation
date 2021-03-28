@@ -78,7 +78,37 @@ function Home() {
 						</div>
 					</div>
 				</header>
+
 				<main>
+					<section className={styles.featureYoutube}>
+						<div class="container">
+							<div class="row">
+								<div class="col col--4">
+									<h1
+										style={{
+											color: '##3F3D56',
+										}}
+									>
+										Easy to implement
+									</h1>
+									<p>
+										Watch me implement Rapi UI to a react native projects and
+										create a login screen using Rapi UI.
+									</p>
+								</div>
+								<div class="col col--8">
+									<iframe
+										width="100%"
+										height="315"
+										src="https://www.youtube.com/embed/VBBXlvyABEs"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</section>
 					{features && features.length > 0 && (
 						<section className={styles.features}>
 							<div className="container">

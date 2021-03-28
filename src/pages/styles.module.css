@@ -31,6 +31,12 @@
 	padding: 2rem 0;
 	width: 100%;
 }
+.featureYoutube {
+	display: flex;
+	align-items: center;
+	padding: 2rem 0;
+	width: 100%;
+}
 
 .featureImage {
 	height: 200px;
