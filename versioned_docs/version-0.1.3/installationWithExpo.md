@@ -15,20 +15,22 @@ slug: /
 
    if you create a project with expo, you should have these packages on your `package.json` but just install again just to make sure.
 
-3. **Import the ThemeProvider**
+3. **Pre-loading and Caching Assets**
 
-   In version 0.2 all you need to do is use the ThemeProvider to wrap your application to control the theme, because Rapi UI now have dark mode!
+   You should load the Icons and Fonts first before, this library uses `@expo/vector-icons` Ionicons and "Ubuntu" google font.
+
+   This library have the custom hooks for pre-load and caching assets you can use `useCachedResources()` put this in your App.js or your root component
 
    ```jsx
-   import { ThemeProvider, useTheme } from 'react-native-rapi-ui';
+   import { useCachedResources } from 'react-native-rapi-ui';
 
    const App = () => {
-   	const { setTheme } = useTheme();
-   	return (
-   		<ThemeProvider theme="light" setTheme={setTheme}>
-   			<Navigator />
-   		</ThemeProvider>
-   	);
+   	const isLoadingComplete = useCachedResources();
+   	if (!isLoadingComplete) {
+   		return <Loading />;
+   	} else {
+   		return <HomeScreen />;
+   	}
    };
 
    export default App;

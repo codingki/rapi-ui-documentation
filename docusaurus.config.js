@@ -21,7 +21,7 @@ module.exports = {
 					type: 'docsVersion',
 					position: 'left',
 					// to: "/path // by default, link to active/latest version
-					label: '0.1.3', // by default, show active/latest version label
+					label: '0.2.0', // by default, show active/latest version label
 				},
 				{
 					to: 'docs/',
@@ -37,6 +37,11 @@ module.exports = {
 				{
 					href: 'https://github.com/codingki/react-native-rapi-ui',
 					label: 'GitHub',
+					position: 'right',
+				},
+				{
+					href: 'https://ko-fi.com/kikiding',
+					label: 'Buy me a coffee',
 					position: 'right',
 				},
 			],
