@@ -3,9 +3,9 @@ module.exports = {
 		'Getting Started': [
 			'installation-with-expo',
 			'installation-without-expo',
-			'web-support',
+			'upgrading02',
 		],
-		Global: ['useCachedResources', 'colors'],
+		Global: ['themeProvider', 'themeColors'],
 		Components: [
 			'layout',
 			'topnav',
@@ -18,5 +18,6 @@ module.exports = {
 			'radio-button',
 			'avatar',
 		],
+		Changelog: ['changelog02'],
 	},
 };
