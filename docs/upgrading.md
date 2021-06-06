@@ -12,15 +12,15 @@ sidebar_label: Upgrading from 0.1.x to 0.2.x
 from this
 
 ```jsx
-import { useCachedResources } from 'react-native-rapi-ui';
+import { useCachedResources } from "react-native-rapi-ui";
 
 const App = () => {
-	const isLoadingComplete = useCachedResources();
-	if (!isLoadingComplete) {
-		return <Loading />;
-	} else {
-		return <HomeScreen />;
-	}
+  const isLoadingComplete = useCachedResources();
+  if (!isLoadingComplete) {
+    return <Loading />;
+  } else {
+    return <HomeScreen />;
+  }
 };
 
 export default App;
@@ -29,15 +29,14 @@ export default App;
 to this
 
 ```jsx
-import { ThemeProvider, useTheme } from 'react-native-rapi-ui';
+import { ThemeProvider } from "react-native-rapi-ui";
 
 const App = () => {
-	const { setTheme } = useTheme();
-	return (
-		<ThemeProvider theme="light" setTheme={setTheme}>
-			<Navigator />
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider theme="light">
+      <Navigator />
+    </ThemeProvider>
+  );
 };
 
 export default App;
@@ -73,14 +72,14 @@ const isLoadingComplete = useCachedResources(
 to this
 
 ```jsx
-const images = [require('./assets/logo'), require('./assets/headerImage')];
+const images = [require("./assets/logo"), require("./assets/headerImage")];
 const fonts = {
-	otherFont1: require('../fonts/otherFont1.ttf'),
-	otherFont2: require('../fonts/otherFont2.ttf'),
-	otherFont3: require('../fonts/otherFont3.ttf'),
+  otherFont1: require("../fonts/otherFont1.ttf"),
+  otherFont2: require("../fonts/otherFont2.ttf"),
+  otherFont3: require("../fonts/otherFont3.ttf"),
 };
 
-<ThemeProvider theme="light" setTheme={setTheme} images={images} fonts={fonts}>
-	<Navigator />
+<ThemeProvider theme="light" images={images} fonts={fonts}>
+  <Navigator />
 </ThemeProvider>;
 ```
