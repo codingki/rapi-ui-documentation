@@ -20,15 +20,14 @@ slug: /
    In version 0.2 all you need to do is use the ThemeProvider to wrap your application to control the theme, because Rapi UI now have dark mode!
 
    ```jsx
-   import { ThemeProvider, useTheme } from 'react-native-rapi-ui';
+   import { ThemeProvider } from "react-native-rapi-ui";
 
    const App = () => {
-   	const { setTheme } = useTheme();
-   	return (
-   		<ThemeProvider theme="light" setTheme={setTheme}>
-   			<Navigator />
-   		</ThemeProvider>
-   	);
+     return (
+       <ThemeProvider theme="light">
+         <Navigator />
+       </ThemeProvider>
+     );
    };
 
    export default App;
