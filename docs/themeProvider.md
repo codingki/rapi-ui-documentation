@@ -28,7 +28,7 @@ export default App;
 
 ### Caching Images and fonts
 
-Assets are cached differently depending on where they're stored and how they're used. This guide offers best practices for making sure you only download assets when you need to. In order to keep the loading screen visible while caching assets, it's also a good idea to render `AppLoading` and only that component until everything is ready.
+Assets are cached differently depending on where they're stored and how they're used. This guide offers best practices for making sure you only download assets when you need to. In order to keep the loading screen visible while caching assets, it's also a good idea to render `AppLoading` and only that component until everything is ready. the `loading` prop will render a custom loading if you fill it.
 
 ```jsx
 const images = [require("./assets/logo"), require("./assets/headerImage")];
@@ -38,7 +38,12 @@ const fonts = {
   otherFont3: require("../fonts/otherFont3.ttf"),
 };
 
-<ThemeProvider theme="light" images={images} fonts={fonts}>
+<ThemeProvider
+  theme="light"
+  images={images}
+  fonts={fonts}
+  loading={<AppLoading />}
+>
   <Navigator />
 </ThemeProvider>;
 ```
@@ -47,10 +52,11 @@ const fonts = {
 
 ## Properties
 
-|                          props                           | required |      value       | Default Value |
-| :------------------------------------------------------: | :------: | :--------------: | ------------- |
-| **[ViewProps](https://reactnative.dev/docs/view#props)** |          |                  |               |
-|                        **theme**                         |    No    | `light`/ `dark`  | `light`       |
-|                       **setTheme**                       |   Yes    |    `setTheme`    |               |
-|                        **images**                        |    No    | [image,image...] |               |
-|                        **fonts**                         |    No    | {font, font...}  |               |
+|                          props                           | required |       value       | Default Value |
+| :------------------------------------------------------: | :------: | :---------------: | ------------- |
+| **[ViewProps](https://reactnative.dev/docs/view#props)** |          |                   |               |
+|                        **theme**                         |    No    |  `light`/ `dark`  | `light`       |
+|                       **setTheme**                       |   Yes    |    `setTheme`     |               |
+|                        **images**                        |    No    | [image,image...]  |               |
+|                        **fonts**                         |    No    |  {font, font...}  |               |
+|                       **loading**                        |    No    | `React.ReactNode` | null          |
