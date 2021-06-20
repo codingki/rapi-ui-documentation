@@ -42,6 +42,14 @@ const App = () => {
 export default App;
 ```
 
+### Color import
+
+in version 0.2.x `theme` for importing color is now changed to `themeColor`
+
+```jsx
+import { themeColor } from "react-native-rapi-ui";
+```
+
 ### Preload and caching assets
 
 put your images and font into the `<ThemeProvider />` props
